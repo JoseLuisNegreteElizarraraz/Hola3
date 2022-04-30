@@ -23,5 +23,22 @@ namespace Hola3
             ventana.Show();
             this.Hide();    
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
