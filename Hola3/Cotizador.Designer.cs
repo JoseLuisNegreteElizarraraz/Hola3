@@ -59,9 +59,8 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(383, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.Size = new System.Drawing.Size(0, 15);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
             // 
             // Cotizador
             // 
@@ -72,6 +71,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Cotizador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cotizador";
             this.ResumeLayout(false);
             this.PerformLayout();
