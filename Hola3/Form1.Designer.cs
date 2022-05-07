@@ -31,7 +31,7 @@
             this.Bienvenido = new System.Windows.Forms.Label();
             this.BtnCot = new System.Windows.Forms.Button();
             this.BtnReg = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Btn3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Bienvenido
@@ -74,24 +74,25 @@
             this.BtnReg.UseVisualStyleBackColor = true;
             this.BtnReg.Click += new System.EventHandler(this.BtnReg_Click);
             // 
-            // button3
+            // Btn3
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Sitka Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(773, 333);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(157, 140);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Empleado/Empresa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btn3.Font = new System.Drawing.Font("Sitka Text", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Btn3.Location = new System.Drawing.Point(762, 333);
+            this.Btn3.Name = "Btn3";
+            this.Btn3.Size = new System.Drawing.Size(168, 140);
+            this.Btn3.TabIndex = 3;
+            this.Btn3.Text = "Cotizaciones";
+            this.Btn3.UseVisualStyleBackColor = true;
+            this.Btn3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 615);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Btn3);
             this.Controls.Add(this.BtnReg);
             this.Controls.Add(this.BtnCot);
             this.Controls.Add(this.Bienvenido);
@@ -108,6 +109,6 @@
         private Label Bienvenido;
         private Button BtnCot;
         private Button BtnReg;
-        private Button button3;
+        private Button Btn3;
     }
 }

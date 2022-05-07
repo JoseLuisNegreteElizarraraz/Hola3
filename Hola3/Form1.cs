@@ -30,5 +30,12 @@ namespace Hola3
             vent.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Cotizaciones cotizaciones = new Cotizaciones();
+            cotizaciones.Show();
+            this.Hide();
+        }
     }
 }

@@ -49,7 +49,7 @@
             this.Controls.Add(this.BtnBak);
             this.Name = "Registro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registro";
+            this.Text = " ";
             this.ResumeLayout(false);
 
         }
