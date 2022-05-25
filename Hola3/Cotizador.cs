@@ -41,30 +41,10 @@
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+           
         }
 
-        private void Tabla1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label26_Click(object sender, EventArgs e)
+        private void Tabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

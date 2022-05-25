@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cotizador));
-            System.Windows.Forms.Label Clave;
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,6 +60,15 @@
             this.NumTer = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Tabla = new System.Windows.Forms.DataGridView();
+            this.claveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiempoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preciopUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datosCotizacionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.LblTotal = new System.Windows.Forms.Label();
             this.LblIva = new System.Windows.Forms.Label();
             this.LblSubtotal = new System.Windows.Forms.Label();
@@ -70,21 +79,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.Tabla1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            Clave = new System.Windows.Forms.Label();
+            this.datosCotizacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datosCotizacionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -93,7 +89,10 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumTer)).BeginInit();
             this.panel1.SuspendLayout();
-            this.Tabla1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -417,6 +416,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.Tabla);
             this.panel1.Controls.Add(this.LblTotal);
             this.panel1.Controls.Add(this.LblIva);
             this.panel1.Controls.Add(this.LblSubtotal);
@@ -427,7 +427,6 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.Tabla1);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label7);
@@ -440,6 +439,75 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1493, 1043);
             this.panel1.TabIndex = 11;
+            // 
+            // Tabla
+            // 
+            this.Tabla.AutoGenerateColumns = false;
+            this.Tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Tabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.claveDataGridViewTextBoxColumn,
+            this.tiempoDataGridViewTextBoxColumn,
+            this.descripcionDataGridViewTextBoxColumn,
+            this.unidadDataGridViewTextBoxColumn,
+            this.cantidadDataGridViewTextBoxColumn,
+            this.preciopUDataGridViewTextBoxColumn,
+            this.totalDataGridViewTextBoxColumn});
+            this.Tabla.DataSource = this.datosCotizacionBindingSource2;
+            this.Tabla.Location = new System.Drawing.Point(184, 399);
+            this.Tabla.Name = "Tabla";
+            this.Tabla.RowTemplate.Height = 25;
+            this.Tabla.Size = new System.Drawing.Size(1144, 429);
+            this.Tabla.TabIndex = 21;
+            this.Tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellContentClick);
+            // 
+            // claveDataGridViewTextBoxColumn
+            // 
+            this.claveDataGridViewTextBoxColumn.DataPropertyName = "Clave";
+            this.claveDataGridViewTextBoxColumn.HeaderText = "Clave";
+            this.claveDataGridViewTextBoxColumn.Name = "claveDataGridViewTextBoxColumn";
+            // 
+            // tiempoDataGridViewTextBoxColumn
+            // 
+            this.tiempoDataGridViewTextBoxColumn.DataPropertyName = "Tiempo";
+            this.tiempoDataGridViewTextBoxColumn.HeaderText = "Tiempo";
+            this.tiempoDataGridViewTextBoxColumn.Name = "tiempoDataGridViewTextBoxColumn";
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // unidadDataGridViewTextBoxColumn
+            // 
+            this.unidadDataGridViewTextBoxColumn.DataPropertyName = "Unidad";
+            this.unidadDataGridViewTextBoxColumn.HeaderText = "Unidad";
+            this.unidadDataGridViewTextBoxColumn.Name = "unidadDataGridViewTextBoxColumn";
+            // 
+            // cantidadDataGridViewTextBoxColumn
+            // 
+            this.cantidadDataGridViewTextBoxColumn.DataPropertyName = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
+            this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
+            // 
+            // preciopUDataGridViewTextBoxColumn
+            // 
+            this.preciopUDataGridViewTextBoxColumn.DataPropertyName = "PreciopU";
+            this.preciopUDataGridViewTextBoxColumn.HeaderText = "PreciopU";
+            this.preciopUDataGridViewTextBoxColumn.Name = "preciopUDataGridViewTextBoxColumn";
+            this.preciopUDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // datosCotizacionBindingSource2
+            // 
+            this.datosCotizacionBindingSource2.DataSource = typeof(Hola3.DatosCotizacion);
             // 
             // LblTotal
             // 
@@ -521,7 +589,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 52);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Agregar compra";
+            this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -543,167 +611,13 @@
             this.label27.Text = "Para:";
             this.label27.Click += new System.EventHandler(this.label27_Click);
             // 
-            // label26
+            // datosCotizacionBindingSource
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(1350, 6);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(93, 30);
-            this.label26.TabIndex = 6;
-            this.label26.Text = "Importe";
+            this.datosCotizacionBindingSource.DataSource = typeof(Hola3.DatosCotizacion);
             // 
-            // label25
+            // datosCotizacionBindingSource1
             // 
-            this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(1171, 8);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(139, 25);
-            this.label25.TabIndex = 5;
-            this.label25.Text = "Precio/unidad";
-            // 
-            // label24
-            // 
-            this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(1035, 6);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(101, 30);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "Cantidad";
-            // 
-            // label23
-            // 
-            this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(889, 6);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(84, 30);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "Unidad";
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(489, 6);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(127, 30);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "Descripcion";
-            // 
-            // label12
-            // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label12.Location = new System.Drawing.Point(106, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(141, 36);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Tiempo de entrega";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Clave
-            // 
-            Clave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            Clave.AutoSize = true;
-            Clave.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            Clave.Location = new System.Drawing.Point(13, 5);
-            Clave.Name = "Clave";
-            Clave.Size = new System.Drawing.Size(75, 32);
-            Clave.TabIndex = 0;
-            Clave.Text = "Clave";
-            // 
-            // Tabla1
-            // 
-            this.Tabla1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Tabla1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.Tabla1.ColumnCount = 7;
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 600F));
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.Tabla1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.Tabla1.Controls.Add(this.textBox12, 6, 1);
-            this.Tabla1.Controls.Add(this.textBox11, 5, 1);
-            this.Tabla1.Controls.Add(this.textBox10, 4, 1);
-            this.Tabla1.Controls.Add(this.textBox9, 3, 1);
-            this.Tabla1.Controls.Add(this.textBox8, 2, 1);
-            this.Tabla1.Controls.Add(this.textBox7, 1, 1);
-            this.Tabla1.Controls.Add(Clave, 0, 0);
-            this.Tabla1.Controls.Add(this.label12, 1, 0);
-            this.Tabla1.Controls.Add(this.label17, 2, 0);
-            this.Tabla1.Controls.Add(this.label23, 3, 0);
-            this.Tabla1.Controls.Add(this.label24, 4, 0);
-            this.Tabla1.Controls.Add(this.label25, 5, 0);
-            this.Tabla1.Controls.Add(this.label26, 6, 0);
-            this.Tabla1.Controls.Add(this.textBox1, 0, 1);
-            this.Tabla1.Location = new System.Drawing.Point(6, 400);
-            this.Tabla1.Name = "Tabla1";
-            this.Tabla1.RowCount = 2;
-            this.Tabla1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.Tabla1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.Tabla1.Size = new System.Drawing.Size(1476, 441);
-            this.Tabla1.TabIndex = 0;
-            this.Tabla1.Paint += new System.Windows.Forms.PaintEventHandler(this.Tabla1_Paint);
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(1322, 45);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(150, 23);
-            this.textBox12.TabIndex = 13;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(1167, 45);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(148, 23);
-            this.textBox11.TabIndex = 12;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(1012, 45);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(148, 23);
-            this.textBox10.TabIndex = 11;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(857, 45);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 23);
-            this.textBox9.TabIndex = 10;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(256, 45);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(594, 23);
-            this.textBox8.TabIndex = 9;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(105, 45);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(142, 23);
-            this.textBox7.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(4, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(94, 23);
-            this.textBox1.TabIndex = 7;
+            this.datosCotizacionBindingSource1.DataSource = typeof(Hola3.DatosCotizacion);
             // 
             // Cotizador
             // 
@@ -728,8 +642,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumTer)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.Tabla1.ResumeLayout(false);
-            this.Tabla1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -775,20 +691,17 @@
         private Label label20;
         private Label label16;
         private Button button3;
+        private DataGridView Tabla;
+        private BindingSource datosCotizacionBindingSource2;
+        private BindingSource datosCotizacionBindingSource;
+        private BindingSource datosCotizacionBindingSource1;
+        private DataGridViewTextBoxColumn claveDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn tiempoDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn unidadDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn preciopUDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
         private Button button2;
-        private TableLayoutPanel Tabla1;
-        private TextBox textBox12;
-        private TextBox textBox11;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox7;
-        private Label label12;
-        private Label label17;
-        private Label label23;
-        private Label label24;
-        private Label label25;
-        private Label label26;
-        private TextBox textBox1;
     }
 }
