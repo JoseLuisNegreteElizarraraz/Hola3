@@ -60,15 +60,9 @@
             this.NumTer = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.Tabla = new System.Windows.Forms.DataGridView();
-            this.claveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiempoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preciopUDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datosCotizacionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.datosCotizacionBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.LblTotal = new System.Windows.Forms.Label();
             this.LblIva = new System.Windows.Forms.Label();
             this.LblSubtotal = new System.Windows.Forms.Label();
@@ -77,10 +71,20 @@
             this.label16 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.datosCotizacionBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.datosCotizacionBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.datosCotizacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.datosCotizacionBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.claveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiempoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioUnitarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -90,6 +94,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumTer)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource1)).BeginInit();
@@ -99,7 +105,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(24, 979);
+            this.button1.Location = new System.Drawing.Point(-46, 2152);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 45);
             this.button1.TabIndex = 1;
@@ -162,9 +168,9 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(20, 215);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(164, 25);
+            this.label6.Size = new System.Drawing.Size(154, 25);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Tel. 462 60 7 15 15";
+            this.label6.Text = "Tel. 462 234 6614";
             // 
             // label7
             // 
@@ -180,11 +186,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.splitContainer1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(964, 24);
+            this.groupBox1.Location = new System.Drawing.Point(846, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(504, 352);
             this.groupBox1.TabIndex = 10;
@@ -338,6 +344,8 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(262, 25);
             this.textBox4.TabIndex = 20;
+            this.textBox4.Text = "4622346614";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
             // 
@@ -352,6 +360,8 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(262, 25);
             this.textBox2.TabIndex = 13;
+            this.textBox2.Text = "emicvenegas@gmail.com";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label18
             // 
@@ -413,9 +423,11 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
-            this.panel1.AutoSize = true;
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.Tabla);
             this.panel1.Controls.Add(this.LblTotal);
             this.panel1.Controls.Add(this.LblIva);
@@ -425,7 +437,6 @@
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.label27);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button1);
@@ -435,10 +446,22 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(9, 6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1493, 1043);
+            this.panel1.Size = new System.Drawing.Size(1370, 749);
             this.panel1.TabIndex = 11;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(12, 894);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(167, 40);
+            this.button4.TabIndex = 22;
+            this.button4.Text = "Volver";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Tabla
             // 
@@ -450,15 +473,131 @@
             this.descripcionDataGridViewTextBoxColumn,
             this.unidadDataGridViewTextBoxColumn,
             this.cantidadDataGridViewTextBoxColumn,
-            this.preciopUDataGridViewTextBoxColumn,
+            this.precioUnitarioDataGridViewTextBoxColumn,
             this.totalDataGridViewTextBoxColumn});
-            this.Tabla.DataSource = this.datosCotizacionBindingSource2;
-            this.Tabla.Location = new System.Drawing.Point(184, 399);
+            this.Tabla.DataSource = this.datosCotizacionBindingSource3;
+            this.Tabla.Location = new System.Drawing.Point(136, 387);
             this.Tabla.Name = "Tabla";
             this.Tabla.RowTemplate.Height = 25;
             this.Tabla.Size = new System.Drawing.Size(1144, 429);
             this.Tabla.TabIndex = 21;
             this.Tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Tabla_CellContentClick);
+            // 
+            // datosCotizacionBindingSource4
+            // 
+            this.datosCotizacionBindingSource4.DataSource = typeof(Hola3.DatosCotizacion);
+            // 
+            // LblTotal
+            // 
+            this.LblTotal.AutoSize = true;
+            this.LblTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblTotal.Location = new System.Drawing.Point(1226, 921);
+            this.LblTotal.Name = "LblTotal";
+            this.LblTotal.Size = new System.Drawing.Size(22, 25);
+            this.LblTotal.TabIndex = 20;
+            this.LblTotal.Text = "0";
+            this.LblTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LblTotal.Click += new System.EventHandler(this.LblTotal_Click);
+            // 
+            // LblIva
+            // 
+            this.LblIva.AutoSize = true;
+            this.LblIva.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblIva.Location = new System.Drawing.Point(1226, 890);
+            this.LblIva.Name = "LblIva";
+            this.LblIva.Size = new System.Drawing.Size(22, 25);
+            this.LblIva.TabIndex = 19;
+            this.LblIva.Text = "0";
+            this.LblIva.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // LblSubtotal
+            // 
+            this.LblSubtotal.AutoSize = true;
+            this.LblSubtotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblSubtotal.Location = new System.Drawing.Point(1226, 863);
+            this.LblSubtotal.Name = "LblSubtotal";
+            this.LblSubtotal.Size = new System.Drawing.Size(22, 25);
+            this.LblSubtotal.TabIndex = 18;
+            this.LblSubtotal.Text = "0";
+            this.LblSubtotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(1041, 921);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 25);
+            this.label21.TabIndex = 17;
+            this.label21.Text = "Total:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(1041, 890);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(44, 25);
+            this.label20.TabIndex = 16;
+            this.label20.Text = "IVA:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(1035, 863);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(86, 25);
+            this.label16.TabIndex = 15;
+            this.label16.Text = "Subtotal:";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(211, 836);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(198, 52);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "Calcular precio total";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(12, 836);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(175, 52);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label27.Location = new System.Drawing.Point(24, 278);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(58, 30);
+            this.label27.TabIndex = 11;
+            this.label27.Text = "Para:";
+            this.label27.Click += new System.EventHandler(this.label27_Click);
+            // 
+            // datosCotizacionBindingSource3
+            // 
+            this.datosCotizacionBindingSource3.DataSource = typeof(Hola3.DatosCotizacion);
+            // 
+            // datosCotizacionBindingSource2
+            // 
+            this.datosCotizacionBindingSource2.DataSource = typeof(Hola3.DatosCotizacion);
+            // 
+            // datosCotizacionBindingSource
+            // 
+            this.datosCotizacionBindingSource.DataSource = typeof(Hola3.DatosCotizacion);
+            // 
+            // datosCotizacionBindingSource1
+            // 
+            this.datosCotizacionBindingSource1.DataSource = typeof(Hola3.DatosCotizacion);
             // 
             // claveDataGridViewTextBoxColumn
             // 
@@ -491,12 +630,12 @@
             this.cantidadDataGridViewTextBoxColumn.HeaderText = "Cantidad";
             this.cantidadDataGridViewTextBoxColumn.Name = "cantidadDataGridViewTextBoxColumn";
             // 
-            // preciopUDataGridViewTextBoxColumn
+            // precioUnitarioDataGridViewTextBoxColumn
             // 
-            this.preciopUDataGridViewTextBoxColumn.DataPropertyName = "PreciopU";
-            this.preciopUDataGridViewTextBoxColumn.HeaderText = "PreciopU";
-            this.preciopUDataGridViewTextBoxColumn.Name = "preciopUDataGridViewTextBoxColumn";
-            this.preciopUDataGridViewTextBoxColumn.Width = 200;
+            this.precioUnitarioDataGridViewTextBoxColumn.DataPropertyName = "Precio_Unitario";
+            this.precioUnitarioDataGridViewTextBoxColumn.HeaderText = "Precio_Unitario";
+            this.precioUnitarioDataGridViewTextBoxColumn.Name = "precioUnitarioDataGridViewTextBoxColumn";
+            this.precioUnitarioDataGridViewTextBoxColumn.Width = 200;
             // 
             // totalDataGridViewTextBoxColumn
             // 
@@ -505,126 +644,30 @@
             this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
             this.totalDataGridViewTextBoxColumn.Width = 200;
             // 
-            // datosCotizacionBindingSource2
+            // button5
             // 
-            this.datosCotizacionBindingSource2.DataSource = typeof(Hola3.DatosCotizacion);
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button5.Location = new System.Drawing.Point(211, 894);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(198, 40);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "Guardar Pdf";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // LblTotal
+            // comboBox1
             // 
-            this.LblTotal.AutoSize = true;
-            this.LblTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblTotal.Location = new System.Drawing.Point(1238, 965);
-            this.LblTotal.Name = "LblTotal";
-            this.LblTotal.Size = new System.Drawing.Size(22, 25);
-            this.LblTotal.TabIndex = 20;
-            this.LblTotal.Text = "0";
-            this.LblTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // LblIva
-            // 
-            this.LblIva.AutoSize = true;
-            this.LblIva.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblIva.Location = new System.Drawing.Point(1238, 921);
-            this.LblIva.Name = "LblIva";
-            this.LblIva.Size = new System.Drawing.Size(22, 25);
-            this.LblIva.TabIndex = 19;
-            this.LblIva.Text = "0";
-            this.LblIva.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // LblSubtotal
-            // 
-            this.LblSubtotal.AutoSize = true;
-            this.LblSubtotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblSubtotal.Location = new System.Drawing.Point(1238, 877);
-            this.LblSubtotal.Name = "LblSubtotal";
-            this.LblSubtotal.Size = new System.Drawing.Size(22, 25);
-            this.LblSubtotal.TabIndex = 18;
-            this.LblSubtotal.Text = "0";
-            this.LblSubtotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(1041, 965);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(56, 25);
-            this.label21.TabIndex = 17;
-            this.label21.Text = "Total:";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(1041, 921);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(44, 25);
-            this.label20.TabIndex = 16;
-            this.label20.Text = "IVA:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(1041, 877);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(86, 25);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "Subtotal:";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(20, 921);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(198, 52);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Calcular precio total";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(19, 863);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 52);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Limpiar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(81, 285);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(367, 23);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(24, 278);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 30);
-            this.label27.TabIndex = 11;
-            this.label27.Text = "Para:";
-            this.label27.Click += new System.EventHandler(this.label27_Click);
-            // 
-            // datosCotizacionBindingSource
-            // 
-            this.datosCotizacionBindingSource.DataSource = typeof(Hola3.DatosCotizacion);
-            // 
-            // datosCotizacionBindingSource1
-            // 
-            this.datosCotizacionBindingSource1.DataSource = typeof(Hola3.DatosCotizacion);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(88, 285);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(278, 23);
+            this.comboBox1.TabIndex = 24;
             // 
             // Cotizador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1517, 1061);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Name = "Cotizador";
@@ -643,6 +686,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Tabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datosCotizacionBindingSource1)).EndInit();
@@ -682,7 +727,6 @@
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
-        private TextBox textBox6;
         private Label rfc;
         private Label LblTotal;
         private Label LblIva;
@@ -695,13 +739,19 @@
         private BindingSource datosCotizacionBindingSource2;
         private BindingSource datosCotizacionBindingSource;
         private BindingSource datosCotizacionBindingSource1;
+        private Button button2;
+        private Button button4;
+        private DataGridViewTextBoxColumn preciopUDataGridViewTextBoxColumn;
+        private BindingSource datosCotizacionBindingSource3;
+        private BindingSource datosCotizacionBindingSource4;
+        private ComboBox comboBox1;
+        private Button button5;
         private DataGridViewTextBoxColumn claveDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn tiempoDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn unidadDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn cantidadDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn preciopUDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn precioUnitarioDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn totalDataGridViewTextBoxColumn;
-        private Button button2;
     }
 }

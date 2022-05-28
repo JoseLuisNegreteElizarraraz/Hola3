@@ -9,9 +9,7 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 ventana= new Form1();
-            ventana.Show();
-            this.Hide();    
+           
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -47,6 +45,23 @@
         private void Tabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LblTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 ventana = new Form1();
+            ventana.Show();
+            this.Hide();
         }
     }
 }

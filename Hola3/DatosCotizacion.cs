@@ -13,7 +13,7 @@ namespace Hola3
         public string Descripcion { get; set; }
         public string Unidad { get; set; }
         public int Cantidad { get; set; }
-        public int PreciopU { get; set; }
+        public int Precio_Unitario { get; set; }
         public int Total { get; set; }
 
     }
